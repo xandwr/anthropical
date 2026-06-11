@@ -4,5 +4,7 @@ A simple, Rust-only crate for **Doing Stuff** with Claude.
 
 ## Dependencies:
 
-- ureq (v3.3.0)
-- serde_json (v1.0.0)
+- ureq = 3.3.0
+- serde = 1.0.228
+- serde_json = 1
+- thiserror = 2.0.18
