@@ -7,8 +7,10 @@ repository = "https://github.com/xandwr/anthropical"
 rust-version = "1.96.0"
 keywords = ["anthropic", "claude", "api", "llm"]
 categories = ["api-bindings", "artificial-intelligence"]
-publish = false # for now...
+publish = false                                                      # for now...
 
 [dependencies]
 ureq = { version = "3.3.0", default-features = false, features = ["rustls"] }
+serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1"
+thiserror = "2.0.18"
