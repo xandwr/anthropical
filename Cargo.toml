@@ -1,6 +1,6 @@
 [package]
 name = "anthropical"
-description = "A dep-free, pure-Rust crate for Claude'ing."
+description = "A lightweight, pure-Rust crate for Claude'ing it up."
 version = "0.0.1"
 edition = "2024"
 repository = "https://github.com/xandwr/anthropical"
@@ -10,3 +10,5 @@ categories = ["api-bindings", "artificial-intelligence"]
 publish = false # for now...
 
 [dependencies]
+ureq = { version = "3.3.0", default-features = false, features = ["rustls"] }
+serde_json = "1"
