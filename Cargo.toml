@@ -1,0 +1,12 @@
+[package]
+name = "anthropical"
+description = "A dep-free, pure-Rust crate for Claude'ing."
+version = "0.0.1"
+edition = "2024"
+repository = "https://github.com/xandwr/anthropical"
+rust-version = "1.96.0"
+keywords = ["anthropic", "claude", "api", "llm"]
+categories = ["api-bindings", "artificial-intelligence"]
+publish = false # for now...
+
+[dependencies]
