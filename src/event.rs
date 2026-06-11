@@ -6,6 +6,8 @@ use thiserror::Error;
 pub enum ParseError {
     #[error("invalid event JSON: {0}")]
     Json(#[from] serde_json::Error),
+    #[error("invalid UTF-8 in event stream: {0}")]
+    Utf8(#[from] std::str::Utf8Error),
     #[error("malformed event: {0}")]
     Malformed(String),
 }
